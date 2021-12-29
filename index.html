@@ -1,171 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jesper Helin | Home</title>
-    <script src="./scripts/script.js"></script>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Noto+Sans+SC&family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="description"
-      content="My name is Jesper and I'm a Full Stack Developer -student. You can find more about me from this website."
-    />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
-    <meta name="author" content="Jesper Helin" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#projects" class="nav_projects"> Projects </a>
-        <a href="#about" class="nav_about"> About </a>
-        <a href="#contact" class="nav_contact"> Contact Me </a>
-      </nav>
-    </header>
-    <main>
-      <section id="introduction">
-        <div id="int-o-container">
-          <div id="int-image"></div>
-          <div id="int-header">
-            <div id="int-text"></div>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="projects">
-        <h1>Projects</h1>
-        <div class="projectCards">
-          <div class="projectContainer">
-            <div class="projectImage"></div>
-            <div class="projectText">
-              <h3>Kellot soi, vai soiko?</h3>
-              <p>
-                One of the first major solo projects where we were given the
-                look of a page that we had to recreate. This was the first
-                project where we had to use HTML5, CSS and JavaScript in
-                conjunction.
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://jesphe.github.io/harj/harj7.html"
-                >
-                  <strong>here</strong>
-                </a>
-                and the given resources
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1hUcKc_zUoDjPRpKGDk5aC5pyu7Dn4MhC/view?usp=sharing"
-                >
-                  <strong>here</strong>
-                </a>
-              </p>
+<html lang="fi">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./styles/index.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <title>Ruosteinen Rauta | Etusivu</title>
+      <script>
+         const responsiveNav = () => {
+            let x = document.querySelector('nav');
+            if (x.className === 'nav') {
+               x.className = 'responsive';
+            } else {
+               x.className = 'nav';
+            }
+         };
+      </script>
+   </head>
+   <body>
+      <header>
+         <nav class="nav">
+            <img src="./img/logo/Logo_dark.png" alt="logo" />
+            <div>
+               <a href="index.html">Etusivu</a>
+               <a>Esimerkkisivu</a>
+               <button>Kirjaudu</button>
             </div>
-          </div>
-          <div class="projectContainer">
-            <div class="projectImage"></div>
-            <div class="projectText">
-              <h3>Kellot soi, vai soiko?</h3>
-              <p>
-                One of the first major solo projects where we were given the
-                look of a page that we had to recreate. This was the first
-                project where we had to use HTML5, CSS and JavaScript in
-                conjunction.
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://jesphe.github.io/harj/harj7.html"
-                >
-                  <strong>here</strong>
-                </a>
-                and the given resources
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1hUcKc_zUoDjPRpKGDk5aC5pyu7Dn4MhC/view?usp=sharing"
-                >
-                  <strong>here</strong>
-                </a>
-              </p>
+            <a
+               href="javascript:void(0);"
+               class="icon"
+               onclick="responsiveNav()"
+            >
+               <i class="fa fa-bars"></i>
+            </a>
+         </nav>
+      </header>
+      <div id="hero">
+         <video src="./video/background-video.mp4" autoplay muted loop></video>
+         <div class="hero-overlay">
+            <span>
+               Oikein rakentaminen onnistuu hyvillä ratkaisuilla - Tervetuloa
+               asioimaan Ruosteiseen Rautaan!
+            </span>
+            <button>Lue lisää</button>
+         </div>
+      </div>
+      <main>
+         <div style="background-color: #f2f2f2">
+            <div class="introduction-container">
+               <h2>Meistä</h2>
+               <div class="introduction-row">
+                  <div>
+                     <p>
+                        Ruosteinen Rauta Oy on perustettu 1958. Myymälästämme
+                        löydät erittäin laadukkaita rauta ja metallialan
+                        tarvikkeita sekä palveluita kaikkeen rakentamiseen – oli
+                        kyse sitten korjaamisesta, remontoimisesta tai uuden
+                        rakentamisesta suurissa tai pienissä kohteissa. Meillä
+                        asiat hoituvat tutulla ammattitaitoisella tavalla alusta
+                        loppuun ja kokeneet ammattilaiset auttavat sinua
+                        löytämään parhaat ratkaisut, rakennusmateriaalit
+                        tuotteet sekä koneet ja vuokralaitteet.
+                     </p>
+                     <br />
+                     <p>
+                        Myymälämme valikoimasta saat kaiken yhdellä kertaa
+                        suuriin ja pieniin rakennus-, remontointi- ja
+                        sisustusprojekteihin ulos ja sisälle. Yrityksemme arvot
+                        ovat kestävän kehitys, osaava ja hyvinvoiva henkilökunta
+                        sekä työturvallisuus.
+                     </p>
+                     <br />
+                     <p>
+                        Oikein rakentaminen onnistuu hyvillä ratkaisuilla -
+                        Tervetuloa asioimaan Ruosteiseen Rautaan!
+                     </p>
+                     <br />
+                     <p>
+                        Ruosteinen Rauta on Porin Yrittäjien jäsenyritys.
+                        Tutustu Porin Yrittäjien toimintaan:
+                        https://www.yrittajat.fi/paikallisyhdistykset/porin-yrittajat/
+                     </p>
+                  </div>
+                  <img
+                     src="./img/unsplash_images/dan-cristian-padure-BxgVEo_rF-o-unsplash.jpg"
+                     alt="img"
+                  />
+               </div>
+               <h2 id="history-heading">Historia</h2>
+               <div class="introduction-row introduction-row-2">
+                  <div>
+                     <p>
+                        Vuonna 1958 avattiin ensimmäisen kerran Ruosteinen Rauta
+                        Oy:n myymälä Porin kauppatorille, osoitteeseen
+                        Pohjoiskauppatori, 28100 Pori. Tässä osoitteessa
+                        myymämme toimi aina vuoteen 2020 asti palvellen
+                        ensimmäisenä rautakauppana Porilaisia. Myymälämme on
+                        toiminut vuodesta 2020 alkaen osoitteessa Urheilutie 1,
+                        28500 Pori, jolloin avasimme supermyymälän – joka on
+                        yksi pohjoismaiden suurimpia rauta ja metallialan
+                        myymälöitä. Vuonna 2020 laajensimme palveluihimme myös
+                        kone ja laitteistovuokrauksen kaikkeen rakentamiseen.
+                     </p>
+                     <br />
+                     <p>
+                        Yrityksen perustaja Rauno Rauta on palvellut asiakkaita
+                        vuodesta 1958 ja vuonna 2022 Tuukka Rauta jatkaa
+                        yrityksen ohjaksissa Reino Raudan jäädessä eläkkeelle.
+                        Tuukka Rauta on toiminut yrityksessä jo vuodesta 2000.
+                        Vuonna 2021 yrityksessämme työskenteli 100 alan
+                        ammattilaista palvellen asiakkaitamme rautaisella
+                        ammattitaidolla.
+                     </p>
+                     <br />
+                     <p>
+                        Yrityksemme ideana on alusta lähtien tarjota rakennus ja
+                        metallialan tuotteita ja palveluita edulliseen hintaan.
+                        Palveluumme on aina kuulunut ammattitaitoinen opastus ja
+                        asiantuntemus, jota asiakkaamme useiden sukupolvien ajan
+                        ovat hyödyntäneet projekteissaan. Voimmekin rehellisesti
+                        sanoa, että tunnemme alan läpikotaisin ja tämän pitkän
+                        kokemuksen tuomalla varmuudella pystymme tarjoamaan
+                        asiakkaillemme kaikki rauta ja metallialanpalvelut
+                        luotettavasti ja laadukkaasti – jo vuodesta 1958.
+                     </p>
+                  </div>
+                  <img
+                     src="./img/unsplash_images/andrew-coop-o8wyYJ_54Gg-unsplash.jpg"
+                     alt="img"
+                  />
+               </div>
             </div>
-          </div>
-          <div class="projectContainer">
-            <div class="projectImage"></div>
-            <div class="projectText">
-              <h3>Kellot soi, vai soiko?</h3>
-              <p>
-                One of the first major solo projects where we were given the
-                look of a page that we had to recreate. This was the first
-                project where we had to use HTML5, CSS and JavaScript in
-                conjunction.
-              </p>
-              <p>
-                Find the product
-                <a
-                  target="_blank"
-                  href="https://jesphe.github.io/harj/harj7.html"
-                >
-                  <strong>here</strong>
-                </a>
-                and the given resources
-                <a
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1hUcKc_zUoDjPRpKGDk5aC5pyu7Dn4MhC/view?usp=sharing"
-                >
-                  <strong>here</strong>
-                </a>
-              </p>
+         </div>
+         <div class="references-container">
+            <div class="reference">
+               <img src="./img/referenssi1.jpg" alt="reference1" />
+               <div class="reference-text">
+                  <h2>
+                     Suurhanke: Helsinki – Tallinna Silta / Valtakunnan Silta Oy
+                  </h2>
+                  <p>
+                     Massiivinen, reippaan punainen Tallinnan silta avattiin
+                     liikenteelle tammikuussa 2020. Siltahanke on yksi Suomen ja
+                     Viron suurimpia yhteisiä rakennushankkeita. Tähän
+                     merkittävään rakennushankkeeseen osallistuivat kaikki
+                     suurimmat rakennusyhtiöt ja toimijat Suomesta ja Virosta.
+                     Ruosteinen Rauta Oy: toimitti kaikki sillan kaiteitten
+                     terärakenteiden tukevat pultit ja kaapelien suojaputket
+                     pääurakoitsija Valtakunnan Sillat Oy:lle. Pultti ja
+                     suojaputkitoimitukset saatiin toimitettua aikataulun
+                     mukaisesti.
+                  </p>
+                  <br />
+                  <p>
+                     Valtakunnan Sillat Oy valitsi Ruosteinen Rauta Oy:n pultti
+                     ja suojaputkitoimittajaksi aikaisemman yhteistyön
+                     perusteella luottaen, että hankkeen tiukassa aikataulussa
+                     pysytään, kun pultit ja suojaputkitoimituksissa on
+                     luotettava kumppani.
+                  </p>
+                  <br />
+                  <p>
+                     Seppo Silta kertookin yhteistyöstä ja toimituksista
+                     seuraavasti ”Ruosteinen Rauta yhtenä suurimpana rautakauppa
+                     ja metallialan toimittajana pystyy toimittamaan suuria
+                     määriä rakennustarvikkeita kriittisiin projekteihin.
+                     Yhteistyö Ruosteisen Raudan kanssa on toiminut aina hyvin
+                     ja tehokkaasti”.
+                  </p>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="about" class="about">
-        <h1>About</h1>
-      </section>
-      <section id="contact" class="contact">
-        <h1>Contact Me</h1>
-        <p>You can find me from these resources:</p>
+            <div class="reference">
+               <img src="./img/referenssi1.jpg" alt="reference1" />
+               <div class="reference-text">
+                  <h2>
+                     Suurhanke: Helsinki – Tallinna Silta / Valtakunnan Silta Oy
+                  </h2>
+                  <p>
+                     Massiivinen, reippaan punainen Tallinnan silta avattiin
+                     liikenteelle tammikuussa 2020. Siltahanke on yksi Suomen ja
+                     Viron suurimpia yhteisiä rakennushankkeita. Tähän
+                     merkittävään rakennushankkeeseen osallistuivat kaikki
+                     suurimmat rakennusyhtiöt ja toimijat Suomesta ja Virosta.
+                     Ruosteinen Rauta Oy: toimitti kaikki sillan kaiteitten
+                     terärakenteiden tukevat pultit ja kaapelien suojaputket
+                     pääurakoitsija Valtakunnan Sillat Oy:lle. Pultti ja
+                     suojaputkitoimitukset saatiin toimitettua aikataulun
+                     mukaisesti.
+                  </p>
+                  <br />
+                  <p>
+                     Valtakunnan Sillat Oy valitsi Ruosteinen Rauta Oy:n pultti
+                     ja suojaputkitoimittajaksi aikaisemman yhteistyön
+                     perusteella luottaen, että hankkeen tiukassa aikataulussa
+                     pysytään, kun pultit ja suojaputkitoimituksissa on
+                     luotettava kumppani.
+                  </p>
+                  <br />
+                  <p>
+                     Seppo Silta kertookin yhteistyöstä ja toimituksista
+                     seuraavasti ”Ruosteinen Rauta yhtenä suurimpana rautakauppa
+                     ja metallialan toimittajana pystyy toimittamaan suuria
+                     määriä rakennustarvikkeita kriittisiin projekteihin.
+                     Yhteistyö Ruosteisen Raudan kanssa on toiminut aina hyvin
+                     ja tehokkaasti”.
+                  </p>
+               </div>
+            </div>
+            <div class="reference">
+               <img src="./img/referenssi1.jpg" alt="reference1" />
+               <div class="reference-text">
+                  <h2>
+                     Suurhanke: Helsinki – Tallinna Silta / Valtakunnan Silta Oy
+                  </h2>
+                  <p>
+                     Massiivinen, reippaan punainen Tallinnan silta avattiin
+                     liikenteelle tammikuussa 2020. Siltahanke on yksi Suomen ja
+                     Viron suurimpia yhteisiä rakennushankkeita. Tähän
+                     merkittävään rakennushankkeeseen osallistuivat kaikki
+                     suurimmat rakennusyhtiöt ja toimijat Suomesta ja Virosta.
+                     Ruosteinen Rauta Oy: toimitti kaikki sillan kaiteitten
+                     terärakenteiden tukevat pultit ja kaapelien suojaputket
+                     pääurakoitsija Valtakunnan Sillat Oy:lle. Pultti ja
+                     suojaputkitoimitukset saatiin toimitettua aikataulun
+                     mukaisesti.
+                  </p>
+                  <br />
+                  <p>
+                     Valtakunnan Sillat Oy valitsi Ruosteinen Rauta Oy:n pultti
+                     ja suojaputkitoimittajaksi aikaisemman yhteistyön
+                     perusteella luottaen, että hankkeen tiukassa aikataulussa
+                     pysytään, kun pultit ja suojaputkitoimituksissa on
+                     luotettava kumppani.
+                  </p>
+                  <br />
+                  <p>
+                     Seppo Silta kertookin yhteistyöstä ja toimituksista
+                     seuraavasti ”Ruosteinen Rauta yhtenä suurimpana rautakauppa
+                     ja metallialan toimittajana pystyy toimittamaan suuria
+                     määriä rakennustarvikkeita kriittisiin projekteihin.
+                     Yhteistyö Ruosteisen Raudan kanssa on toiminut aina hyvin
+                     ja tehokkaasti”.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class="services-container">
+            <h1>Palvelut</h1>
+            <div class="services">
+               <div class="service">
+                  <h2>Rakennustarvikkeet</h2>
+                  <p>
+                     Ruosteinen Rauta tarjoaa rakennustarvikkeet alan johtavilta
+                     merkeiltä nopeasti toimitettuna suoraan työmaalle.
+                     Ruosteisen Raudan Rakennustarvikkeet – palvelun avulla
+                     rakentaminen on helppoa ja edullista. Laadukkuus ja
+                     edullisuus ovat ominaisuuksia, joita ostajat odottavat
+                     rakennustarvikkeilta. Rakennustarvikkeet - valikoimasta
+                     löytyy paljon vaihtoehtoja pienempiin tai isompiin
+                     rakennus- tai remontointiprojekteihin.
+                  </p>
+                  <ul>
+                     <li>Perustustarvikkeet</li>
+                     <li>Rakennusmateriaalit</li>
+                     <li>Sähkötarvikkeet</li>
+                     <li>Ilmanvaihto</li>
+                     <li>Lämmitys</li>
+                     <li>LVI</li>
+                     <li>Työkalut ja tarvikkeet</li>
+                  </ul>
+               </div>
+               <div class="service">
+                  <h2>Sisustustarvikkeet</h2>
+                  <p>
+                     Kun talo on rakennettu, voidaan keskittyä sisustamiseen. Me
+                     autamme sinua myös kaikissa sisustamiseen liittyvissä
+                     ratkaisuissa. Valikoimaamme kuuluu kaikki sisustukseen
+                     tarvittavat tuotteet ja ratkaisut, kuten keittiökalusteet,
+                     takat, tapetit, lattiapinnoitteet, laatat, koukut ja
+                     maalit.
+                  </p>
+                  <ul>
+                     <li>Keittiö</li>
+                     <li>Kylpyhuone ja wc</li>
+                     <li>Laatat | lattialaatat, seinälaatat, kuviolaatat</li>
+                     <li>
+                        Lattiat | parketit, laminaatit, korkkilattiat,
+                        vinyylilattiat
+                     </li>
+                     <li>Ovet</li>
+                     <li>Kiukaat</li>
+                     <li>Tapetit</li>
+                     <li>Koukut naulakot ja hyllyt</li>
+                     <li>Takat</li>
+                     <li>Valaistus</li>
+                  </ul>
+               </div>
+               <div class="service">
+                  <h2>Piharakennus</h2>
+                  <p>
+                     Laajasta valikoimastamme löydät kaiken tarvittavan pihan
+                     suunnitteluun ja rakentamiseen.
+                  </p>
+                  <ul>
+                     <li>Pihakivetys ja päällysteet</li>
+                     <li>Puutarhakalusteet ja tarvikkeet</li>
+                     <li>Kylpytynnyrit ja uima-altaat</li>
+                     <li>Pihavalaisimet</li>
+                  </ul>
+               </div>
+               <div class="service">
+                  <h2>Konevuokraus</h2>
+                  <p>
+                     Vuokraamme laadukkaat ja turvalliset koneet erikokoisiin
+                     projekteihin yrityksille, yhteistyökumppaneille ja
+                     yksityisille rakentajille ja remontoijille. Varaa ja tilaa
+                     tarvitsemasi kone tai laite, kuljetamme koneen kohteeseen
+                     sovittuna ajankohtana. Esimerkkejä koneista ja
+                     laitteistamme:
+                  </p>
+                  <ul>
+                     <li>Henkilönostimet</li>
+                     <li>Nosto- ja siirtokalusto</li>
+                     <li>Maantiivistyskalusto</li>
+                     <li>Maansiirtokalusto</li>
+                     <li>Peräkärryt</li>
+                     <li>Avant</li>
+                     <li>Generaattorit</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <h1>Ota yhteyttä</h1>
+         <div class="footer-content">
+            <div class="contact-information">
+               <img src="./img/logo/Logo_dark.svg" alt="logo" />
+               <p>
+                  Osoite
+                  <br />
+                  Puhelinnumero
+                  <br />
+                  Sähköposti
+                  <br />
+               </p>
+            </div>
+            <div class="contact-form-container">
+               <form class="contact-form">
+                  <input type="text" placeholder="Etu- ja sukunimi" />
+                  <input type="text" placeholder="Puhelinnumero" />
+                  <input type="text" placeholder="Sähköposti" />
+                  <textarea cols="30" rows="10" placeholder="Viesti"></textarea>
+                  <input type="submit" />
+               </form>
+            </div>
+         </div>
+      </footer>
+      <script>
+         // -----------------------------------------------
+         // References in mobile view
+         //
+         const slider = document.querySelector('.references-container');
+         const beginsliding = (e) => {
+            slider.onpointermove = slide;
+            slider.setPointerCapture(e.pointerId);
+         };
 
-        <!-- <i>
-          Interested in contacting me? <br />
-          Just fill in the form below with <br />
-          your contact information.
-        </i>
-        <div class="formContainer">
-          <form
-            id="contactForm"
-            method="POST"
-            enctype="multipart/form-data"
-            action="send"
-          >
-            <div class="inputGroup">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                class="inputField"
-                name="email"
-                required
-              />
-            </div>
-            <div class="inputGroup">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                class="inputTextarea"
-                name="message"
-                required
-              ></textarea>
-            </div>
-            <input type="submit" value="Submit" />
-          </form>
-        </div> -->
-      </section>
-    </main>
-  </body>
+         const stopSliding = (e) => {
+            slider.onpointermove = null;
+            slider.releasePointerCapture(e.pointerId);
+         };
+
+         const slider = (e) => {
+            slider.style.transform = `translate(${e.clientX - 70}px)`;
+         };
+
+         slider.onpointerdown = beginsliding;
+         slider.onpointerup = stopSliding;
+      </script>
+   </body>
 </html>
