@@ -1,0 +1,420 @@
+:root {
+   font-size: 16px;
+   --primary: #086ba8;
+   --secondary: #0096f5;
+   --highlights: #ad4900;
+   --text: #054065;
+   --neutral: #fff9f5;
+   color: var(--text);
+}
+
+/* Global styles */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+   color: var(--primary);
+   font-size: 32px;
+   font-weight: bold;
+}
+
+h2 {
+   color: var(--primary);
+   font-size: 24px;
+   font-weight: bold;
+}
+
+h3 {
+   color: var(--primary);
+   font-size: 18px;
+   font-weight: bold;
+}
+
+h3 {
+   color: var(--primary);
+   font-size: 16px;
+   font-weight: bold;
+}
+
+/* Header */
+
+nav {
+   width: 90%;
+   min-height: 70px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   overflow: hidden;
+   position: relative;
+   color: var(--highlights);
+}
+
+nav div {
+   list-style-type: none;
+   display: block;
+   font-size: 24px;
+}
+
+nav div a {
+   padding: 5px 15px;
+   color: var(--highlights);
+}
+
+nav div > :last-child {
+   padding: 7px 25px;
+   border: none;
+   background-color: #ad4900;
+   color: var(--neutral);
+   font-size: 24px;
+   border-radius: 10px;
+}
+
+nav div button:hover {
+   background-color: #8f2b00;
+   cursor: pointer;
+}
+
+nav a {
+   text-decoration: none;
+   color: var(--highlights);
+}
+
+nav a:hover {
+   text-decoration: underline;
+   text-decoration-thickness: 2px;
+}
+
+.icon {
+   color: var(--highlights);
+   display: none;
+   font-size: 32px;
+}
+
+/* Hero */
+
+#hero {
+   position: relative;
+   width: fit-content;
+   height: fit-content;
+}
+
+#hero video {
+   width: 100%;
+}
+
+.hero-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   color: var(--highlights);
+   font-size: 56px;
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.hero-overlay span {
+   width: 95%;
+}
+
+.hero-overlay button {
+   position: relative;
+   top: 125px;
+   font-size: 24px;
+   color: var(--neutral);
+   background-color: var(--highlights);
+   cursor: pointer;
+   border: none;
+   padding: 15px 60px;
+   border-radius: 10px;
+}
+
+.hero-overlay button:hover {
+   color: var(--neutral);
+   background-color: #8f2b00;
+   cursor: pointer;
+}
+
+/* Main */
+
+.introduction-container {
+   width: 65vw;
+   margin: auto;
+   padding: 100px 0 100px 0;
+   display: flex;
+   flex-direction: column;
+}
+
+.introduction-row {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+   justify-items: center;
+   padding: 20px 0;
+}
+
+.introduction-row img {
+   width: 70%;
+}
+
+.introduction-row-2 > :nth-child(1) {
+   order: 1;
+}
+
+.reference:not(:first-child) {
+   display: none;
+}
+
+.reference {
+   display: flex;
+}
+
+.reference > * {
+   width: 50%;
+}
+
+.reference-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 75px;
+}
+
+.reference-text h2 {
+   padding-bottom: 24px;
+}
+
+.services-container {
+   background-color: #f2f2f2;
+   padding: 50px 0;
+}
+
+.services-container h1 {
+   text-align: center;
+}
+
+.services {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin: 50px 50px;
+}
+
+.service {
+   width: 300px;
+   background-color: #ffffff;
+   padding: 25px;
+   margin: 0 0 20px 0;
+}
+
+.service h2 {
+   padding-bottom: 20px;
+}
+
+.service ul {
+   padding: 20px 20px;
+}
+
+/* Footer */
+
+footer h1 {
+   text-align: center;
+}
+
+footer {
+   padding: 50px 0 0 0;
+   background-color: #e8e8e8;
+}
+
+footer h1 {
+   color: var(--highlights);
+}
+
+.footer-content {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap-reverse;
+   padding: 50px 0;
+}
+
+.footer-content > * {
+   width: 300px;
+   margin: 10px 0;
+}
+
+.contact-information p {
+   padding: 20px 0 0 10px;
+   line-height: 2;
+}
+
+footer form {
+   display: flex;
+   flex-direction: column;
+}
+
+footer form > * {
+   margin: 10px 0;
+   padding: 15px;
+   border: solid black 1px;
+   border-radius: 5px;
+}
+
+footer textarea {
+   resize: none;
+}
+
+footer input[type='submit'] {
+   background-color: var(--highlights);
+   color: var(--neutral);
+   font-size: 16px;
+   border: none;
+}
+
+footer input[type='submit']:hover {
+   background-color: #8f2b00;
+   cursor: pointer;
+}
+
+/* Media queries */
+
+@media all and (max-width: 1000px) {
+   header {
+      height: max-content;
+   }
+
+   nav {
+      min-height: max-content;
+      display: block;
+      position: relative;
+   }
+
+   nav img {
+      width: 250px;
+   }
+
+   nav :not(:first-child) {
+      display: none;
+   }
+
+   nav .icon {
+      float: right;
+      display: block;
+   }
+
+   nav.responsive {
+      position: relative;
+   }
+
+   nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+
+   nav.responsive button {
+      margin: 20px 15px;
+   }
+
+   nav.responsive div {
+      padding-bottom: 20px;
+   }
+
+   nav.responsive div,
+   nav.responsive div > * {
+      display: block;
+      float: none;
+   }
+
+   #hero {
+      height: 500px;
+   }
+
+   .hero-overlay button {
+      top: 50px;
+      padding: 10px 100px;
+      font-size: 18px;
+   }
+
+   .hero-overlay {
+      font-size: 32px;
+   }
+
+   .introduction-container {
+      width: 90%;
+      padding: 50px 0 50px 0;
+   }
+
+   .introduction-row {
+      grid-template-columns: 100%;
+   }
+
+   .introduction-row img {
+      padding: 20px 0 0 0;
+   }
+
+   .introduction-row-2 > :nth-child(1) {
+      order: 0;
+   }
+
+   #history-heading {
+      margin: 0;
+   }
+
+   .references-container {
+      display: grid;
+      grid-template-columns: 100% 100% 100%;
+   }
+
+   .reference:not(:first-child) {
+      display: flex;
+   }
+
+   .reference {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .reference {
+      width: 500px;
+   }
+
+   .reference > * {
+      width: 95%;
+   }
+
+   .reference-text {
+      padding: 25px 0;
+   }
+
+   .reference-text h2 {
+      padding: 12px 0;
+   }
+
+   .services {
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+
+   .service {
+      margin: 0 10px 20px 10px;
+   }
+}
+
+@media all and (max-width: 500px) {
+   .introduction-row img {
+      width: 100%;
+   }
+}
