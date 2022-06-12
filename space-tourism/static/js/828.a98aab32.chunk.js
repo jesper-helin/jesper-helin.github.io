@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[828],{828:function(e,s,a){e.exports=a.p+"static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg"}}]);

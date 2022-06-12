@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[140],{140:function(e,s,t){e.exports=t.p+"static/media/image-douglas-hurley.e4c7def427824ef543c0.webp"}}]);

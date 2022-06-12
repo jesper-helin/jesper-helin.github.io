@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[244],{244:function(e,s,t){e.exports=t.p+"static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg"}}]);

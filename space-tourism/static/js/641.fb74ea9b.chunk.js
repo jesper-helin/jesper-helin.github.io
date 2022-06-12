@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[641],{641:function(e,s,t){e.exports=t.p+"static/media/image-moon.d287d07182de3015952f.png"}}]);

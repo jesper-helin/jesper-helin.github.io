@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[795],{795:function(e,s,t){e.exports=t.p+"static/media/image-victor-glover.1c271f99bab8b06d7ab5.webp"}}]);

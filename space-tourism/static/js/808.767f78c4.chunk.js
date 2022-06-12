@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[808],{808:function(e,s,t){e.exports=t.p+"static/media/image-mars.1b224c8663251270d79f.png"}}]);

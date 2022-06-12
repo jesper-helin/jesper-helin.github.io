@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[420],{420:function(e,s,t){e.exports=t.p+"static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg"}}]);

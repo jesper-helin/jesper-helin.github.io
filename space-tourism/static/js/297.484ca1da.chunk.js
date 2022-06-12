@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[297],{297:function(e,s,a){e.exports=a.p+"static/media/image-anousheh-ansari.bb42b775ee0b12430f3a.webp"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[224],{224:function(e,s,t){e.exports=t.p+"static/media/background-destination-tablet.8f55d346d8b6cfd95ab7.jpg"}}]);

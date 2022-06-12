@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism_website=self.webpackChunkspace_tourism_website||[]).push([[505],{505:function(e,s,t){e.exports=t.p+"static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg"}}]);
